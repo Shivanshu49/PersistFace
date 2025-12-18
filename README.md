@@ -186,7 +186,7 @@ python src/face_recognizer.py
   - `l` — lock nearest track to center (manual override)
   - `u` — unlock nearest track
 
-## How the tracker avoids false positives
+## How the tracker avoids false positives 
 - Unknown predictions no longer produce a new track unless the detection area is large enough or the Haar cascade confirms a face inside the ROI. This reduces boxes on background noise.
 - Confirmed tracks are given a short "grace" when the user looks away; tune `locked_grace_seconds` in `settings/settings.py`.
 
@@ -200,7 +200,7 @@ Open `settings/settings.py` and adjust under `RECOGNITION`:
 - `hist_threshold` — appearance histogram threshold (lower = stricter)
 - `min_area_for_unknown_track` — prevents tiny Unknown detections from creating tracks
 
-## Troubleshooting
+## Troubleshooting 
 - If YuNet fails with input-size mismatch, ensure the frame `process_width` in `settings` matches your camera frames (or the code sets input size dynamically).
 - If IPCamera is choppy, lower `CAMERA['process_width']` and `CAMERA['fps']` in settings.
 - For improved long-term re-ID across large pose changes, consider integrating a small face-embedding model (e.g., a lightweight MobileFaceNet) — this repo currently uses color histograms as a fast heuristic.
