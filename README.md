@@ -6,7 +6,7 @@ This repository provides a small, practical pipeline to capture faces, train a s
 
 Repository: https://github.com/Shivanshu49
 
-## What is in this repo
+## What is in this repos
 - `src/face_taker.py` — capture labeled face images from a local or IP camera (with optional augmentation).
 - `src/face_trainer.py` — train the LBPH recognizer and write `trainer.yml`.
 - `src/face_recognizer.py` — real-time detection, recognition, IoU+Kalman tracking, and simple appearance re-ID.
@@ -205,6 +205,6 @@ Open `settings/settings.py` and adjust under `RECOGNITION`:
 - If IPCamera is choppy, lower `CAMERA['process_width']` and `CAMERA['fps']` in settings.
 - For improved long-term re-ID across large pose changes, consider integrating a small face-embedding model (e.g., a lightweight MobileFaceNet) — this repo currently uses color histograms as a fast heuristic.
 
-## License & Links
+## License & Links 
 - GitHub: https://github.com/Shivanshu49
 
