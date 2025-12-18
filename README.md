@@ -14,7 +14,7 @@ Repository: https://github.com/Shivanshu49
 
 ---
 
-## Quick start (step-by-step, zsh)
+## Quick start (step-by-step,zsh)
 
 1) Create and activate a virtual environment (recommended):
 
